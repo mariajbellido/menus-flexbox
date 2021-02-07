@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Distintos estilos de menú usando Flexbox</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,13 +25,54 @@
             </ul>
         </nav>
 
-        <h2>Con Iconos</h2>
-        <nav clas="iconos">
+        <h2>Con Iconos</h2> 
+        <nav class="iconos">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Tienda Virtual</a></li>
-                <li><a href="#">Asistencia</a></li>
+                <li>
+                    <a href="#">
+                       <div class="icono">
+                        <i class="fas fa-home"></i>
+                       </div> 
+                       <div class="texto">
+                        Inicio
+                        <span>Página Principal</span>
+                       </div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <div class="icono">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="texto">
+                            Contacto
+                            <span>¡Escríbenos!</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <div class="icono">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <div class="texto">
+                            Tienda Virtual
+                            <span>Compra aquí</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <div class="icono">
+                            <i class="fas fa-question"></i> 
+                        </div>
+                        <div class="texto">
+                            FAQ
+                            <span>Preguntas frecuentes</span>
+                        </div>
+
+                    </a>
+                </li>
             </ul>
         </nav>
 
