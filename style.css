@@ -87,6 +87,42 @@ nav ul a {
 
 
 
+/* Menú redes sociales */
+
+.sociales ul li span {
+    display: none;
+}
+
+.sociales ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociales ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.sociales ul li a[href*='facebook.com']::before {
+    content: "\f082";
+}
+
+.sociales ul li a[href*='twitter.com']::before {
+    content: "\f081";
+}
+
+.sociales ul li a[href*='youtube.com']::before {
+    content: "\f167";
+}
+
+.sociales ul li a[href*='instagram.com']::before {
+    content: "\f16d";
+}
+
+.sociales ul li a[href*='pinterest.com']::before {
+    content: "\f0d3";
+}
+
+
 /* MEDIA QUERIES */
 
 
