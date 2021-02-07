@@ -34,3 +34,25 @@ nav ul a {
     text-decoration: none;
     font-size: 1.4rem;
 }
+
+/* Sencillo */
+
+.sencillo ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.sencillo ul li {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+@media screen and (min-width: 768px) {
+    .sencillo ul {
+        flex-direction: row;
+    }
+    
+    .sencillo ul li {
+        margin-bottom: 0;
+    }
+}
