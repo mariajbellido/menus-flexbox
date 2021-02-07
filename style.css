@@ -47,6 +47,13 @@ nav ul a {
     text-align: center;
     margin-bottom: .5rem;
 }
+
+
+/* Menú con iconos */
+
+
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
     .sencillo ul {
         flex-direction: row;
