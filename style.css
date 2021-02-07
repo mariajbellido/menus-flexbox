@@ -71,6 +71,21 @@ nav ul a {
 }
 
 
+/* Menú con Dropdown */
+
+
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown ul li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 
 /* MEDIA QUERIES */
 
@@ -83,6 +98,37 @@ nav ul a {
     .sencillo ul li {
         margin-bottom: 0;
     }
+
+    .iconos ul li {
+        flex: 1;
+    }
+
+    .dropdown ul {
+        flex-direction: row;
+    }
+
+    .dropdown ul li {
+        position: relative;
+        display: flex;
+        flex: 1 1 100%;
+    }
+
+    .dropdown ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: lightblue;
+    }
+
+    .dropdown ul li:hover ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
 }
 
 
@@ -98,9 +144,3 @@ nav ul a {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .iconos ul li {
-        flex: 1;
-    }
-    
-}
